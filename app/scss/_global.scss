@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+span {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+form,
+input,
+button,
+select,
+option {
+  outline: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  padding-top: 90px;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+// font-family: 'Open Sans', ;
+// font-family: 'Raleway', ;
+// font-family: 'Roboto', ;
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+}
+.top-section {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 60px;
+}
+.section-title {
+  color: #130e52;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 43px;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  position: relative;
+  margin-bottom: 25px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 2px;
+    background-color: #e92223;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.section-description {
+  color: #696969;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.wrapper {
+  max-width: 1420px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.button {
+  padding: 12px 24px;
+  background-color: #009bdd;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  border: 1px solid transparent;
+  transition: 0.3s all;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #009bdd;
+    color: #009bdd;
+  }
+}
+.shadow {
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+}
